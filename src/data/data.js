@@ -1,0 +1,22 @@
+export const data = [
+  {
+    img:"ppp",
+    title:"ppp",
+    price:20,
+  },
+  {
+    img:"ppp",
+    title:"ppp",
+    price:20,
+  },
+  {
+    img:"ppp",
+    title:"ppp",
+    price:20,
+  },
+  {
+    img:"ppp",
+    title:"ppp",
+    price:20,
+  }
+];
