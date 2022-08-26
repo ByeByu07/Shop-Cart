@@ -1,22 +1,50 @@
 export const data = [
   {
-    img:"ppp",
+    img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f1jIC9dLPRYVxH37GJKSuwHaHa%26pid%3DApi&f=1",
+    id:1,
     title:"ppp",
     price:20,
   },
   {
-    img:"ppp",
+    img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f1jIC9dLPRYVxH37GJKSuwHaHa%26pid%3DApi&f=1",
+    id:2,
+    title:"ppp",
+    price:50,
+  },
+  {
+    img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f1jIC9dLPRYVxH37GJKSuwHaHa%26pid%3DApi&f=1",
+    id:3,
+    title:"ppp",
+    price:70,
+  },
+  {
+    img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f1jIC9dLPRYVxH37GJKSuwHaHa%26pid%3DApi&f=1",
+    title:"ppp",
+    id:4,
+    price:10,
+  },
+  {
+    img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f1jIC9dLPRYVxH37GJKSuwHaHa%26pid%3DApi&f=1",
+    id:5,
     title:"ppp",
     price:20,
   },
   {
-    img:"ppp",
+    img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f1jIC9dLPRYVxH37GJKSuwHaHa%26pid%3DApi&f=1",
+    id:6,
     title:"ppp",
-    price:20,
+    price:50,
   },
   {
-    img:"ppp",
+    img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f1jIC9dLPRYVxH37GJKSuwHaHa%26pid%3DApi&f=1",
+    id:7,
     title:"ppp",
-    price:20,
+    price:70,
+  },
+  {
+    img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f1jIC9dLPRYVxH37GJKSuwHaHa%26pid%3DApi&f=1",
+    title:"ppp",
+    id:8,
+    price:10,
   }
 ];

@@ -1,7 +1,22 @@
-.container{
+.containerHeader{
   display: flex;
   justify-content: space-between;
   align-content: center;
   padding: 30px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.cart{
+  width:2.5rem;
+  position: relative;
+}
+
+.absoluteCart{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: brown;
+  padding: 3px 6px;
+  border-radius: 10px;
+  color: white;
 }

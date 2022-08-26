@@ -1,0 +1,10 @@
+.itemBox{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.containerItems h1{
+  text-align: center;
+}

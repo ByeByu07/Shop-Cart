@@ -1,11 +1,18 @@
-import "../css/Header.css"
+import "../css/Item.css"
 
-const Item = (props) => {
-  return <div className="container">
-    <div>{props.item.img}</div>
-    <div>{props.item.title}</div>
-    <div>{props.item.price}</div>
-  </div>
+const Item = ({item}) => {
+  return <section className="containerItem">
+    <div className="containerItem_image">
+      <img src={item.img} width="50%" height="auto"/>
+    </div>
+    <div className="containerItem_text">
+      <p>{item.title}</p>
+      <p>{item.price}</p>
+    </div>
+    <div className="containerItem_button">
+      <button type="button">Add To Cart</button>
+    </div>
+  </section>
 }
 
 export default Item;

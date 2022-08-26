@@ -1,16 +1,20 @@
 import Header from "./components/Header";
 import {data} from "./data/data";
-import Item from "./components/Item";
+import Items from "./components/Items";
+import {useSelector} from "react-redux";
+import Login from "./components/Login";
 
 function App() {
-  // console.log(data);
+  
+  const isLogging = useSelector((state)=>state.auth.isLoggedIn)
+
+  if(!isLogging)
+    return  <Login/>
 
   return (
     <>
       <Header/>
-      <div>
-        {data.map((item,i)=><Item key={i} item={item}/>)}
-      </div>  
+      <Items data={data}/>
     </>
   );
 }
