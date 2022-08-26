@@ -1,0 +1,20 @@
+.containerCart header{
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemCartList{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin-top: 10px;
+}
+.buttonCartList{
+  display: flex;
+  gap: 5px;
+}
+
+.buttonCartList button{
+  width: 5rem;
+}
