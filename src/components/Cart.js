@@ -1,43 +1,31 @@
-import "../css/Cart.css"
-import { useSelector,useDispatch } from "react-redux";
 import { cartAction } from "../store/cartSlice";
+import { useDispatch } from "react-redux";
 
-const Cart = () => {
+const Cart = ({item}) => {
+
   const dispacth = useDispatch();
-  const itemList = useSelector((state)=> state.cart.itemList);
-  let totalAllPrice = 0;
-  itemList.forEach(item => {
-    return totalAllPrice+=item.totalPrice;
-  });
-
   const incrementItem = () =>{
     dispacth(cartAction.addToCart({
+      id:item.id,
+      price:item.price
     }))
   }
 
   const decrementItem = () =>{
-
+    dispacth(cartAction.removeFromCart(item.id))
   }
 
-  return <section className="containerCart">
-    <header>
-      <h2>List Item Cart</h2>
-      <h3>Total : ${totalAllPrice}</h3>
-    </header>
-    <div>
-      {itemList.map((item)=>{
-        return <article key={item.id} className="itemCartList">
-          <h4>{item.name}</h4>
-          <p>{item.quantity}</p>
-          <p>${item.totalPrice}</p>
+  return <article className="itemCartList">
+        <h4>{item.name}</h4>
+        <p>${item.price}</p>
+        <p>x {item.quantity}</p>
+        <p>${item.totalPrice}</p>
           <div className="buttonCartList">
             <button onClick={incrementItem}>+</button>
             <button onClick={decrementItem}>-</button>
           </div>
-        </article>
-      })}
-    </div>
-  </section>
+      </article>
+    
 }
 
 export default Cart;
